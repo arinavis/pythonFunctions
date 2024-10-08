@@ -38,7 +38,7 @@ def eilerastis():
     print('Niekas kitas –')
     print('Motulė')
     print('Tave siuvinėjo!')
-    print()
+
 eilerastis()
 eilerastis()
 eilerastis()
@@ -69,6 +69,27 @@ print()
 text_3()
 
 print('--5 uzd--')
+def randSum():
+    ranNum1 = random.randint(1, 5)
+    ranNum2 = random.randint(5, 10)
+    print(f'{ranNum1} + {ranNum2} = {ranNum1 + ranNum2}')
+randSum()
+randSum()
+randSum()
+randSum()
+
+print('--6 uzd--')
+# info = ['var', 'pav', 'amz', 'DU', 'et', 'spec']
+
+# def pol(var, pav, amz, DU, et, spec):
+#     return var, pav, amz, DU, et, spec
+# result = pol('Jonas', 'Karalevičius', 31, 2000, 1, 'Pareigūnas')
+# print(*result)
+
+def pol(var, pav, amz, DU, et, spec):
+    print(f'Policininkas vardu {var}, pavarde {pav}, kurio amžius {amz} metai, uždirbantis {DU} eurų per mėnesį ir dirbanti {et} etatu specializuojasi kaip {spec}.')
+pol('Jonas', 'Karalevičius', 31, 2000, 1, 'Pareigūnas')
+
 
 
 
