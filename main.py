@@ -90,6 +90,17 @@ def pol(var, pav, amz, DU, et, spec):
     print(f'Policininkas vardu {var}, pavarde {pav}, kurio amžius {amz} metai, uždirbantis {DU} eurų per mėnesį ir dirbanti {et} etatu specializuojasi kaip {spec}.')
 pol('Jonas', 'Karalevičius', 31, 2000, 1, 'Pareigūnas')
 
+print('--7 uzd--')
+
+def sk():
+    for i in range(10):
+        print( random.randint(1, 10) )
+for a in range(5):
+    sk()
+    print()
+
+print('--8 uzd--')
+
 
 
 
