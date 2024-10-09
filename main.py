@@ -172,6 +172,17 @@ atsitiktinis()
 atsitiktinis()
 atsitiktinis()
 
+print('--13 uzd--')
+def zodziu_masyvas(list):
+    sarasas = ', '.join(map(str, list))
+    print(f'Sąrašas: {sarasas}')
+    for z in list:
+        print(f'Ilgis žodžio {z} - {len(z)} simboliai')
+
+masyvas = ['žmogus', 'pelė', 'bakterijos']
+
+zodziu_masyvas(masyvas)
+
 
 
 
