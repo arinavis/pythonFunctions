@@ -166,9 +166,11 @@ def atsitiktinis():
     skirtumas(s1, s2)
     sandauga(s1, s2)
     dalyba(s1, s2)
+    print()
+
 atsitiktinis()
-
-
+atsitiktinis()
+atsitiktinis()
 
 
 
