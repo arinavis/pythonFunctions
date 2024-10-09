@@ -132,6 +132,43 @@ def auto(marke, model, gm, dt):
 auto('Audi', 'R8', 2006, 5.0)
 
 print('--12 uzd--')
+'''12.Sukurkite funkciją sumai skaičiuoti, ši funkcija per argumentus turėtų
+gauti du skaičius, bei išvesti patį veiksmą kartu su atsakymu (pvz 7 + 5 =
+12). 
+
+Sukurkite tokias pačias funkcijas skirtumui, sandaugai ir dalmeniui
+rasti. 
+
+Sukurkite dar vieną funkciją, kuri sugeneruotų du atsitiktinius
+skaičius, bei iškviestų kitas 4 funkcijas, perduodant joms sugeneruotus
+skaičius. Šią bendrąją funkciją iškvieskite keletą kartų.'''
+
+def suma(num1, num2):
+    print(f'Suma: {num1} + {num2} = {num1 + num2}')
+suma(5, 6)
+
+def skirtumas(num1, num2):
+    print(f'Skirtumas: {num1} - {num2} = {num1 - num2}')
+skirtumas(8, 4)
+
+def sandauga(num1, num2):
+    print(f'Sandauga: {num1} * {num2} = {num1 * num2}')
+sandauga(9, 6)
+
+def dalyba(num1, num2):
+    print(f'Dalyba: {num1} / {num2} = {num1 / num2}')
+dalyba(20, 4)
+print('---Random---')
+def atsitiktinis():
+    s1 = random.randint(1, 10)
+    s2 = random.randint(1, 10)
+    suma(s1, s2)
+    skirtumas(s1, s2)
+    sandauga(s1, s2)
+    dalyba(s1, s2)
+atsitiktinis()
+
+
 
 
 
