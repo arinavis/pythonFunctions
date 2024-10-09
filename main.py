@@ -126,6 +126,13 @@ skaiciai(1,2)
 skaiciai(5,2)
 skaiciai(3,3)
 
+print('--11 uzd--')
+def auto(marke, model, gm, dt):
+    print(f'Parduodamas automobilis {marke} {model}, {gm} metų gamybos. Automobilio variklio darbo tūris - {dt} l.')
+auto('Audi', 'R8', 2006, 5.0)
+
+print('--12 uzd--')
+
 
 
 
