@@ -105,6 +105,28 @@ def atsSk():
 for i in range(10):
     atsSk()
 
+print('--9 uzd--')
+def pasisveikinimas(vardas):
+    print('Labas,', vardas)
+def atsisveikinimas(vardas):
+    print('Viso gero,', vardas)
+
+pasisveikinimas('Petras')
+atsisveikinimas('Ona')
+
+print('--10 uzd--')
+def skaiciai(sk1, sk2):
+    if sk1 > sk2:
+        print(sk1)
+    elif sk2 > sk1:
+        print(sk2)
+    else:
+        print('skaičiai lygūs')
+skaiciai(1,2)
+skaiciai(5,2)
+skaiciai(3,3)
+
+
 
 
 
