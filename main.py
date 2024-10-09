@@ -100,6 +100,11 @@ for a in range(5):
     print()
 
 print('--8 uzd--')
+def atsSk():
+    print( random.randint(1, 500) )
+for i in range(10):
+    atsSk()
+
 
 
 
