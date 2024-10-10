@@ -196,6 +196,17 @@ print()
 skaiciu_masyvas(skmasyvas2)
 
 print('--15 uzd--')
+'''Susikurkite funkciją, kuri per argumentus priimtų pažymių masyvą, bei
+studento vardą su pavarde. 
+
+Funkcija turėtų išvesti studento vardą ir pavardę, jo pažymius. 
+Taip pat, suskaičiuoti vidurkį, bei jį išvesti. 
+
+Už funkcijos ribų susikurkite reikiamus kintamuosius ir masyvus, arba
+objektus studentų pažymiams saugoti ir užpildykite juos duomenimis.
+
+Iškvieskite šią funkciją perduodant visus reikalingus duomenis.'''
+
 def student_grades(grades, name, surname):
     print(f'{name} {surname} - { ', '.join( map(str, grades) ) }')
     sum = 0
@@ -206,11 +217,57 @@ def student_grades(grades, name, surname):
     print(f'Grade sum: {sum}')
     print(f'Grade count: {count}')
     print(f'Grade point average: {sum / count}')
+
 stName = 'John'
 stSurname = 'Smith'
 stGrades = [8, 9, 5, 6, 7]
 
 student_grades(stGrades, stName, stSurname)
+
+print('--16 uzd--')
+def maxNumInList(maxNum):
+    max = maxNum[0]
+    for num in maxNum:
+        if num > max:
+            max = num
+    print(f'Max number in list: {max}')
+
+def generatedNum(ranNum, qty):
+    for rand in range(qty):
+        randomNum = random.randint(1, 100)
+        ranNum.append(randomNum)
+
+list1 = []
+list2 = []
+list3 = []
+
+generatedNum(list1, 15)
+generatedNum(list2, 66)
+generatedNum(list3, 45)
+
+print(list1)
+maxNumInList(list1)
+print(list2)
+maxNumInList(list2)
+print(list3)
+maxNumInList(list3)
+
+print('--17 uzd--')
+def sentence():
+    return 'Labas vakaras. Ketvirtadienis - mažasis penktadienis!'
+print( sentence() )
+
+print('--18 uzd--')
+def randomNumber():
+    return random.randint(1, 10)
+print( randomNumber() )
+print( randomNumber() )
+print( randomNumber() )
+
+print('--19 uzd--')
+def studNameAvg(name, avg):
+    return f'Studento {name} pažymių vidurkis - {avg}'
+print( studNameAvg('Jono', 9.5))
 
 
 
