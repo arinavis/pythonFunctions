@@ -269,6 +269,27 @@ def studNameAvg(name, avg):
     return f'Studento {name} pažymių vidurkis - {avg}'
 print( studNameAvg('Jono', 9.5))
 
+print('--20 uzd--')
+def minDivisor(num):
+    for i in range(2, num + 1):
+        if num % i == 0:
+            return f'The lowest divisor of the number {num} is {i}'
+
+for num in range(10, 30):
+    print(minDivisor(num))
+
+print('--21 uzd--')
+def primeNum(num):
+    if num <= 1:
+        return False
+    for i in range(2, int(num ** 0.5) +1 ):
+        if num % i == 0:
+            return False
+    return True
+
+for num in range(2, 15 +1):
+    prime = primeNum(num)
+    print(num, prime)
 
 
 
