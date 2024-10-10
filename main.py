@@ -310,7 +310,25 @@ generalFunc()
 print()
 generalFunc()
 
+print('--23 uzd--')
+def listSum(list):
+    sum = 0
+    for s in list:
+        sum += s
+    return sum
 
+listOfNumbers1 = [5, 4, 6, 7, 8, 10, 33]
+listOfNumbers2 = [4, 8, 14, 5, 9, 12, 58]
+
+print(listOfNumbers1)
+print( listSum(listOfNumbers1) )
+print(listOfNumbers1)
+print( listSum(listOfNumbers2) )
+
+if listSum(listOfNumbers1) > listSum(listOfNumbers2):
+    print('Pirmo masyvo suma didesnė')
+else:
+    print('Antro masyvo suma didesnė')
 
 
 
