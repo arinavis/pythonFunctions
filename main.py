@@ -195,7 +195,22 @@ skaiciu_masyvas(skmasyvas1)
 print()
 skaiciu_masyvas(skmasyvas2)
 
+print('--15 uzd--')
+def student_grades(grades, name, surname):
+    print(f'{name} {surname} - { ', '.join( map(str, grades) ) }')
+    sum = 0
+    count = 0
+    for sk in grades:
+        sum += sk
+        count += 1
+    print(f'Grade sum: {sum}')
+    print(f'Grade count: {count}')
+    print(f'Grade point average: {sum / count}')
+stName = 'John'
+stSurname = 'Smith'
+stGrades = [8, 9, 5, 6, 7]
 
+student_grades(stGrades, stName, stSurname)
 
 
 
