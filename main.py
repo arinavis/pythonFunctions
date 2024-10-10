@@ -183,6 +183,18 @@ masyvas = ['žmogus', 'pelė', 'bakterijos']
 
 zodziu_masyvas(masyvas)
 
+print('--14 uzd--')
+def skaiciu_masyvas(list):
+    for i in list:
+        print(f'{i} - {i * i / 2}')
+
+skmasyvas1 = [5, 8, 11, 15, 4]
+skmasyvas2 = [1, 11, 2, 22, 3, 33, 4, 44, 5, 55]
+
+skaiciu_masyvas(skmasyvas1)
+print()
+skaiciu_masyvas(skmasyvas2)
+
 
 
 
