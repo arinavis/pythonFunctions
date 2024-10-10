@@ -291,7 +291,24 @@ for num in range(2, 15 +1):
     prime = primeNum(num)
     print(num, prime)
 
+print('--22 uzd--')
+def mathFunc1(a, b):
+    return a + b
+def mathFunc2(a, b, c):
+    return a + b + c
+def mathFunc3(a, b):
+    return a - b
 
+def generalFunc():
+    a = random.randint(1, 50)
+    b = random.randint(1, 50)
+    c = random.randint(1, 50)
+    print(f'{a} + {b} = {mathFunc1(a, b)}' )
+    print(f'{a} + {b} + {c} = {mathFunc2(a, b, c)}')
+    print(f'{a} - {b} = {mathFunc3(a, b)}')
+generalFunc()
+print()
+generalFunc()
 
 
 
