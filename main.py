@@ -405,3 +405,13 @@ def minMax(a, b):
 ranNum = minMax(10, 50)
 print(ranNum)
 
+print('---6 uzd---')
+def minMaxLength(a, b, c):
+    arr1 = [ random.randint(a, b) for a in range(c) ]
+    return arr1
+
+randomArr = minMaxLength(5, 80, 10)
+
+print(f'List: {randomArr}')
+
+
