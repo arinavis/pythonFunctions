@@ -414,4 +414,18 @@ randomArr = minMaxLength(5, 80, 10)
 
 print(f'List: {randomArr}')
 
+print('---7 uzd---')
+def sumArr(array):
+    sumA = 0
+    for a in array:
+        sumA += a
+    return sumA
+sumOfArray = sumArr(randomArr)
+print(sumOfArray)
 
+print('---8 uzd---')
+def avgArr(array):
+    return sumArr(array) / len(array)
+
+avgOfArray = sumArr(randomArr) / len(randomArr)
+print(avgOfArray)
