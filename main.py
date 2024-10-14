@@ -429,3 +429,17 @@ def avgArr(array):
 
 avgOfArray = sumArr(randomArr) / len(randomArr)
 print(avgOfArray)
+
+print('---9 uzd---')
+def rectanglePrinting(a, b):
+    for i in range(a):
+        print('*  ' * b)
+
+rectanglePrinting(5, 8)
+
+print('---10 uzd---')
+def sentLength(sent):
+    return len(sent)
+
+sentence = 'Šiandien labai graži diena'
+print(sentLength(sentence))
