@@ -384,4 +384,24 @@ def PISq():
 reiksme = PISq()
 print(reiksme)
 
+print('---3 uzd---')
+def kinSan(a, b):
+    return a * b
+sandauga = kinSan(8, 9)
+print(sandauga)
+
+print('---4 uzd---')
+def listLine(list):
+    for i in list:
+        print(i)
+membersInList = ['yes', 'no', 8, 6.2, 'Hi']
+
+listLine(membersInList)
+
+print('---5 uzd---')
+
+def minMax(a, b):
+    return random.randint(a, b)
+ranNum = minMax(10, 50)
+print(ranNum)
 
