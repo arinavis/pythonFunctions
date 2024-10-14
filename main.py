@@ -330,11 +330,58 @@ if listSum(listOfNumbers1) > listSum(listOfNumbers2):
 else:
     print('Antro masyvo suma didesnė')
 
+print('--24 uzd--')
+print('---1 variantas. Maks')
+def longestWord(list):
+    max_length = 0
+    max_word = ''
+    for w in list:
+        current_length = len(w)
+        if current_length > max_length:
+            max_length = current_length
+            max_word = w
+    return f'length = {max_length}, word = {max_word}'
 
+wordList = ['eglute', 'zmogelis', 'katinas', 'keliautojai', 'saule']
 
+print(longestWord(wordList))
 
+print('---2 variantas. ChatGPT')
+def longestWord2(list):
+    maxWord = max(list, key=len)
+    return maxWord
 
+wordList2 = ['eglute', 'zmogelis', 'katinas', 'keliautojai', 'saule']
+longest = longestWord2(wordList2)
 
+print(f'word - {longest}')
+print(f'Length - {len(longest)}')
 
+print('--25 uzd--')
+def studGrade(list):
+    grades = 0
+    for g in list:
+        if g > 4:
+            return True
+    return False
+
+gradeList1 = [8, 10, 5, 4, 9]
+gradeList2 = [8, 7, 10, 9, 10]
+
+print(studGrade(gradeList1))
+#  nepabaigta
+
+print('---PAPILDOMOS UŽDUOTYS---')
+
+print('---1 uzd---')
+def kinSum(a, b):
+    print(a + b)
+kinSum(5, 6)
+
+print('---2 uzd---')
+def PISq():
+    return 9.8596
+reiksme = PISq()
+print(reiksme)
 
 
