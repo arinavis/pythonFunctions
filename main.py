@@ -1,4 +1,5 @@
 import random
+from audioop import reverse
 
 # FUNKCIJOS 2024-10-08
 
@@ -443,3 +444,12 @@ def sentLength(sent):
 
 sentence = 'Šiandien labai graži diena'
 print(sentLength(sentence))
+
+print('---11 uzd---')
+def codedSentence(sent):
+    coded = sent[::-1]
+    return coded
+
+sntc = 'Šiandien labai graži diena'
+coded_sentence = codedSentence(sntc)
+print(codedSentence(sntc))
